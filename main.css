@@ -1,0 +1,26 @@
+.one img{
+    height: 100px;
+    Float: left;
+    margin-right:2rem;
+   margin-bottom: 1rem;
+}
+
+.two{
+    background-color:gold;
+    overflow:auto;/*Overflow allows the background to wrap around the image*/
+}
+.two img{
+    height: 100px;
+    float:right;
+    margin-left:2rem;
+    margin-bottom:1rem;
+}
+
+.three img{
+    height: 100px;
+}
+
+.three
+{
+    clear:right;/*or clear both allows the clear anything that is floated above it and start in a new Paragraph*/
+}
