@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .box{
+        border:1px solid #333;
+        padding:1rem;
+        margin:1rem auto;
+    }
+
+    .box:nth-child(1)
+    {
+        position:static;
+        background-color: hsla(75, 50%, 50%, 0.8);
+    }
+    .box:nth-child(2)
+    {
+        position:relative;/*moving it relative from the original without affecting anything else(space)*/
+        top:50px;
+        right:200px;
+        background-color: hsla(125, 50%, 50%, 0.8);
+    }
+    .box:nth-child(3)
+    {
+        /*when you scroll it says where it was positioned*/
+        position:absolute;/*strinks to wrap it's content. lose reference to anything else. Removed and then added back with added margin*/
+        background-color: hsla(175, 50%, 50%, 0.8);
+         top:50px;
+        bottom:50px;
+        right:200px;
+        left:200px;
+
+
+    }
+    .box:nth-child(4)
+    {
+        /*difference between absolute and Fixed(fixed when you scroll it maintains it position relative to the top corner)*/
+        position:fixed;/*strinks to wrap it's content. lose reference to anything else. Removed and then added back with added margin*/
+        top:50px;
+        left:50px;
+        background-color: hsla(225, 50%, 50%, 0.8);
+
+    }
+
+    main{
+        Padding-bottom:600px;
+    }
+
+</style>
+
+</head>
+<body>
+
+    <header>
+        <h1>CSS Position</h1>
+    </header>
+    <main>
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+    </main>  
+    
+</body>
+</html>
